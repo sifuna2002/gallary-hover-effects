@@ -1,0 +1,24 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.wrappper{
+  position: relative;
+  overflow: hidden;
+}
+.wrappper > img{
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+.wrappper > .content{
+  position: absolute;
+  inset: 0;
+  color: red;
+}
